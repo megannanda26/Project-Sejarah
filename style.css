@@ -49,9 +49,9 @@ nav ul li a{
     color: white;
 }
 
-/* padjajaran*/
+/* masa-kerajaan*/
 
-.padjajaran-header{
+.kerajaan-header{
     background-image: url(img/padjajaran.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -60,8 +60,33 @@ nav ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
 }
+
+.batutulis, .ciaruteun, .kebon-kopi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.batutulis .text, .ciaruteun .text, 
+.kebon-kopi .text{
+    padding: 1em;
+    width: 500px;
+}
+
+.batutulis .img{
+    width: 300px;
+    height: 250px;
+}
+
+.batutulis .img img{
+    width: 100%;
+    height: 100%;
+}
+
 
 /* footer */
 footer{
