@@ -6,8 +6,10 @@
 
 /* header */
 header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background-image: url(img/istana\ Bogor.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -46,18 +48,21 @@ nav ul li a{
     text-decoration: none;
     color: white;
 }
-/* main */
-main{
-    height: 10000px;
+
+/* padjajaran*/
+
+.padjajaran-header{
+    background-image: url(img/padjajaran.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-/* intro */
-.intro{
-    padding: 2em;
-    text-align: center;
-}
-
-/* kebun-raya */
 /* footer */
 footer{
     background-color: black;
