@@ -4,6 +4,9 @@
 
 }
 
+body{
+    overflow-x: hidden;
+}
 /* header */
 header{
     display: flex;
@@ -64,19 +67,29 @@ nav ul li a{
     color: white;
 }
 
+.box{
+    display: flex;
+    flex-wrap: nowrap;
+    width: fit-content;
+}
+
 .container{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     height: 100vh;
-    gap: 3em;
+    width: 100vw;
+    gap: 5em;
 }
+
 
 .container .text{
     padding: 2em;
     width: 600px;
-    height: 425px;
+    height: 500px;
+    margin-bottom: 4em;
     box-shadow: 0 10px 25px 5px rgba(139, 69, 19, 0.25),
         0 8px 10px -6px rgba(139, 69, 19, 0.15);
 }
@@ -105,27 +118,102 @@ nav ul li a{
 .container .img{
     width: 650px;
     height: 500px;
+    margin-bottom: 4em;
 }
 
 .container .img img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 10px;
     border: 5px solid black;
 }
 
+.end-container, .start-container{
+    width: 425px;
+}
 
 
-
-
-
-
+.middle-container:nth-child(2)::before {
+    content: "1999";
+    position: absolute;
+    background-color: rgb(24, 214, 94);
+    width: 150px;
+    height: 60px;
+    bottom: 28px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.3em;
+}
+.middle-container:nth-child(3)::before {
+    content: "1999";
+    position: absolute;
+    background-color: rgb(24, 214, 94);
+    width: 150px;
+    height: 60px;
+    bottom: 28px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.3em;
+}
+.middle-container:nth-child(4)::before {
+    content: "1999";
+    position: absolute;
+    background-color: rgb(24, 214, 94);
+    width: 150px;
+    height: 60px;
+    bottom: 28px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.3em;
+}
+.middle-container:nth-child(5)::before {
+    content: "1999";
+    position: absolute;
+    background-color: rgb(24, 214, 94);
+    width: 150px;
+    height: 60px;
+    bottom: 28px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.3em;
+}
+.middle-container:nth-child(6)::before {
+    content: "1999";
+    position: absolute;
+    background-color: rgb(24, 214, 94);
+    width: 150px;
+    height: 60px;
+    bottom: 28px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.3em;
+}
 /* footer */
 footer{
     background-color: black;
     color: white;
     padding: 2em;
-
 }
 
 .copyright{
@@ -143,4 +231,5 @@ footer{
     top: 0;
     left: 0;
 }
+
 
