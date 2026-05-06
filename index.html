@@ -1,160 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jejak Sejarah Bogor - Peninggalan Masa Lalu</title>
     <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
+
 <body>
     <header>
-        <h1>Mari Mengenal menjelajah ke masa lalu di Kota Bogor</h1>
+        <div class="hero-content">
+            <h1 class="hero-title">Mari Mengenal & Menjelajah<br>Ke Masa Lalu di <span class="highlight">Kota
+                    Bogor</span></h1>
+            <p class="hero-subtitle">Menyusuri Jejak Peradaban dari Masa Kerajaan Hingga Perjuangan Kemerdekaan</p>
+            <div class="hero-scroll">
+                <span>Scroll untuk menjelajah</span>
+                <div class="scroll-indicator"></div>
+            </div>
+        </div>
     </header>
-    <!-- Container Utama -->
+
     <main>
+        <!-- MASA KERAJAAN -->
         <section class="masa-kerajaan">
             <div class="kerajaan-header">
-                <div class="text">
-                    <h1>Peninggalan Masa Kerajaan (Hindu-Buddha/Sunda)</h1><br>
-                    <p>Periode ini menandai zaman keemasan kerajaan-kerajaan besar seperti Tarumanegara dan Pajajaran di wilayah Bogor.</p>
+                <div class="section-header">
+                    <span class="badge">Era Klasik</span>
+                    <h1>Peninggalan Masa Kerajaan</h1>
+                    <p class="period">Hindu-Buddha / Sunda | ± Abad ke-5 s.d ke-16 Masehi</p>
+                    <hr class="gold-line">
+                    <p>Periode ini menandai zaman keemasan kerajaan-kerajaan besar seperti Tarumanegara dan Pajajaran
+                        yang pernah berjaya di wilayah Bogor.</p>
                 </div>
             </div>
+
             <div class="box" id="slider1">
                 <div class="container start-container"></div>
-                <div class="container middle-container">
-                    <div class="text">
-                        <h2>Prasasti Batutulis</h2>
-                        <h3>( Peninggalan Kerajaan Padjajaran )</h3>
-                        <p><b>📖 Penjelasan:</b></p> <br>
-                        <p>Ini adalah kompleks situs bersejarah yang sangat penting. Prasasti utamanya terbuat dari batu andesit dan
-                            berisi pengakuan serta perintah dari Sri Baduga Maharaja (Prabu Siliwangi) yang memerintah Kerajaan Sunda di
-                            Pakuan
-                            Pajajaran . Aksara yang digunakan adalah Sunda Kuno dan Jawa Kuno (Kawi) dengan angka tahun 1455 Saka (1533
-                            M) . Di
-                            lokasi yang sama, Anda juga dapat melihat batu berukir tapak kaki, batu lingga (simbol kesuburan), serta
-                            batu berlubang
-                            yang merupakan peninggalan bersejarah lainnya.</p><br>
-                        <p><b>📍Lokasi:</b> Jalan Batutulis, Kelurahan Batutulis, Bogor Selatan</p>
-                    </div>
-                    <div class="img">
-                        <img src="img/batutulis.png">
-                    </div>
+                <div class="timeline-year tl1">
+                    <div class="year-marker" data-slider="slider2" data-index="0">1943</div>
+                    <div class="year-marker" data-slider="slider2" data-index="1">1945</div>
+                    <div class="year-marker" data-slider="slider2" data-index="2">1949</div>
                 </div>
-                <div class="container middle-container">
-                    <div class="text">
-                        <h2>Prasasti Ciaruteun dan Telapak Kaki Gajah</h2>
-                        <h3>( Peninggalan Kerajaan Tarumanegara )</h3>
-                        <p><b>📖 Penjelasan:</b></p> <br>
-                        <p>Prasasti Ciaruteun merupakan salah satu bukti paling penting keberadaan Kerajaan Tarumanegara, kerajaan
-                            bercorak Hindu
-                            tertua di Jawa Barat. Prasasti ini ditulis di atas batu alam yang besar (megalitik) dengan menggunakan
-                            aksara Pallawa
-                            dan bahasa Sanskerta.</p><br>
-                        <p><b>📍Lokasi:</b> Tepi Sungai Ciaruteun, Kelurahan Pasir Mulya, Kecamatan Bogor Barat, Kota Bogor.</p>
-                    </div>
-                    <div class="img">
-                        <img src="img/ciaruteun.png">
-                    </div>
-                </div>
-                <div class="container middle-container">
+
+                <!-- Prasasti Kebon Kopi -->
+                <div class="container middle-container" data-year="450 M">
+                    <div class="year-badge">450 M</div>
                     <div class="text">
                         <h2>Prasasti Kebon Kopi</h2>
-                        <h3>( Peninggalan Kerajaan Tarumanegara )</h3>
-                        <p><b>📖 Penjelasan:</b></p> <br>
-                        <p>Prasasti ini ditemukan pada abad ke-19 saat pembukaan perkebunan kopi . Keunikan dari prasasti ini bukan
-                            terletak pada
-                            aksara, melainkan pada pahatan gambar sepasang telapak kaki gajah yang diidentifikasi sebagai kaki Gajah
-                            Airawata
-                            (kendaraan Dewa Wisnu) . Karena itu, prasasti ini juga populer dengan sebutan Prasasti Telapak Gajah.
-                            Meskipun pernah
-                            hilang dan ditemukan kembali dalam kondisi pecah, prasasti ini menjadi bukti penting pengaruh Hindu di
-                            wilayah Bogor
-                            pada abad ke-5 Masehi.</p><br>
-                        <p><b>📍Lokasi:</b> Kampung Muara Hilir, Kecamatan Cibungbulang, Kabupaten Bogor.</p>
+                        <h3>Peninggalan Kerajaan Tarumanegara</h3>
+                        <div class="highlight-box">
+                            <p><b>📖 Penjelasan:</b></p>
+                            <p>Prasasti ini ditemukan pada abad ke-19 saat pembukaan perkebunan kopi. Keunikan dari
+                                prasasti ini bukan terletak pada aksara, melainkan pada pahatan gambar sepasang telapak
+                                kaki gajah yang diidentifikasi sebagai kaki Gajah Airawata (kendaraan Dewa Wisnu).
+                                Karena itu, prasasti ini juga populer dengan sebutan Prasasti Telapak Gajah.</p>
+                            <p><b>📍 Lokasi:</b> Kampung Muara Hilir, Kecamatan Cibungbulang, Kabupaten Bogor</p>
+                        </div>
                     </div>
                     <div class="img">
-                        <img src="img/kebon kopi.png">
+                        <img src="img/kebon kopi.png" alt="Prasasti Kebon Kopi">
                     </div>
                 </div>
+
+                <!-- Prasasti Ciaruteun -->
+
+                <div class="container middle-container" data-year="536 M">
+                    <div class="year-badge">536 M</div>
+                    <div class="text">
+                        <h2>Prasasti Ciaruteun</h2>
+                        <h3>Peninggalan Kerajaan Tarumanegara</h3>
+                        <div class="highlight-box">
+                            <p><b>📖 Penjelasan:</b></p>
+                            <p>Prasasti Ciaruteun merupakan salah satu bukti paling penting keberadaan Kerajaan
+                                Tarumanegara, kerajaan bercorak Hindu tertua di Jawa Barat. Prasasti ini ditulis di atas
+                                batu alam yang besar (megalitik) dengan menggunakan aksara Pallawa dan bahasa Sanskerta.
+                                Yang menarik, terdapat pahatan telapak kaki yang melambangkan kekuasaan raja
+                                Purnawarman.</p>
+                            <p><b>📍 Lokasi:</b> Tepi Sungai Ciaruteun, Kelurahan Pasir Mulya, Kecamatan Bogor Barat,
+                                Kota Bogor</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="img/ciaruteun.png" alt="Prasasti Ciaruteun">
+                    </div>
+                </div>
+
+                <!-- Prasasti Batutulis -->
+                <div class="container middle-container" data-year="1533 M">
+                    <div class="year-badge">1533 M</div>
+                    <div class="text">
+                        <h2>Prasasti Batutulis</h2>
+                        <h3>Peninggalan Kerajaan Padjajaran</h3>
+                        <div class="highlight-box">
+                            <p><b>📖 Penjelasan:</b></p>
+                            <p>Ini adalah kompleks situs bersejarah yang sangat penting. Prasasti utamanya terbuat dari
+                                batu andesit dan berisi pengakuan serta perintah dari Sri Baduga Maharaja (Prabu
+                                Siliwangi) yang memerintah Kerajaan Sunda di Pakuan Pajajaran. Aksara yang digunakan
+                                adalah Sunda Kuno dan Jawa Kuno (Kawi) dengan angka tahun 1455 Saka (1533 M).</p>
+                            <p><b>📍 Lokasi:</b> Jalan Batutulis, Kelurahan Batutulis, Bogor Selatan</p>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="img/batutulis.png" alt="Prasasti Batutulis">
+                    </div>
+                </div>
+
                 <div class="container end-container"></div>
             </div>
         </section>
-            
 
-        <section class="masa-kemerdakaan">
+        <!-- MASA KEMERDEKAAN -->
+        <section class="masa-kemerdekaan">
             <div class="kemerdekaan-header">
-                <div class="text">
-                    <h1>Peninggalan Masa Kemerdekaan/Perang Dunia II</h1><br>
-                    <p>Periode ini menyimpan cerita heroik perjuangan rakyat Bogor, dari masa pendudukan Jepang hingga mempertahankan
-                    kemerdekaan.</p>
+                <div class="section-header">
+                    <span class="badge">Era Perjuangan</span>
+                    <h1>Peninggalan Masa Kemerdekaan & Perang Dunia II</h1>
+                    <p class="period">1942 - 1949 | Masa Pendudukan Jepang hingga Indonesia Merdeka</p>
+                    <hr class="gold-line">
+                    <p>Periode ini menyimpan cerita heroik perjuangan rakyat Bogor, dari masa pendudukan Jepang hingga
+                        mempertahankan kemerdekaan.</p>
                 </div>
             </div>
+
+           
             <div class="box" id="slider2">
                 <div class="container start-container"></div>
-                <div class="container middle-container">
+
+                <div class="timeline-year tl2">
+                    <div class="year-marker" data-slider="slider2" data-index="0">1939</div>
+                    <div class="year-marker" data-slider="slider2" data-index="1">1943</div>
+                    <div class="year-marker" data-slider="slider2" data-index="2">1949</div>
+                </div>
+
+                <!-- Bunker -->
+                <div class="container middle-container" data-year="1945">
+                    <div class="year-badge">1939</div>
                     <div class="text">
-                        <h2>Museum PETA (Pembela Tanah Air)</h2>
-                        <h3>( Peninggalan Kolonial Belanda )</h3>
-                        <p><b>📖 Penjelasan:</b></p> <br>
-                        <P>Bangunan ini dulunya adalah markas tentara Belanda (KNIL) yang kemudian diambil alih Jepang pada tahun 1943 untuk
-                        dijadikan pusat pendidikan perwira PETA . PETA dilatih untuk mempertahankan tanah air dari Sekutu, namun justru menjadi
-                        kawah candradimuka bagi para perwira yang kemudian menjadi cikal bakal Tentara Nasional Indonesia (TNI) . Di museum ini,
-                        Anda dapat melihat diorama pembentukan PETA, pemberontakan PETA di Blitar, koleksi senjata, seragam, dan foto-foto
-                        dokumentasi.</p><br>
-                        <p><b>📍Lokasi:</b> Jalan Jenderal Sudirman No. 35, Kota Bogor</p>
+                        <h2>Bunker Gumati</h2>
+                        <h3>Peninggalan Kolonial Belanda</h3>
+                        <div class="highlight-box">
+                            <p><b>📖 Penjelasan:</b></p>
+                            <p>Bunker-bunker ini dibangun sekitar tahun 1939-1941 oleh pemerintah kolonial Belanda.
+                                Fungsinya adalah sebagai benteng pertahanan dan pos pengintaian untuk melindungi tangsi
+                                militer Belanda (yang kini menjadi Markas Paspampres) dari serangan Jepang. Bunker
+                                memiliki struktur beton tebal dengan lubang intai (lubang untuk senapan) yang menghadap
+                                ke jalur kereta api.</p>
+                            <p><b>📍 Lokasi:</b> Kawasan Gumati Cafe & Area Bank Mandiri, Bogor</p>
+                        </div>
                     </div>
                     <div class="img">
-                        <img src="img/batutulis.png">
+                        <img src="img/bunker.jpg" alt="Bunker Peninggalan Belanda">
                     </div>
                 </div>
-                <div class="container middle-container">
+
+                <!-- Museum PETA -->
+                <div class="container middle-container" data-year="1943">
+                    <div class="year-badge">1943</div>
                     <div class="text">
-                        <h2>Bunker Gumati & Bunker Mandiri</h2>
-                        <h3>( Peninggalan Kolonial Belanda )</h3>
-                        <p><b>📖 Penjelasan:</b></p> <br> 
-                        <p>Bunker-bunker ini dibangun sekitar tahun 1939-1941 oleh pemerintah kolonial Belanda . Fungsinya adalah sebagai benteng
-                        pertahanan dan pos pengintaian untuk melindungi tangsi militer Belanda (yang kini menjadi Markas Paspampres) dari
-                        serangan Jepang . Bunker Gumati (di area Gumati Cafe) dan Bunker Mandiri (di lahan milik Bank Mandiri) memiliki struktur
-                        beton tebal dengan lubang intai (lubang untuk senapan) yang menghadap ke jalur kereta api . Penemuannya cukup menarik,
-                        yaitu ketika proyek pembangunan berlangsung dan ekskavator tidak sanggup menghancurkan struktur kokoh bangunan ini.</p><br>
-                        <p><b>📍Lokasi:</b> Bunker Gumati & Bunker Mandiri (Peninggalan Kolonial Belanda)</p>
+                        <h2>Museum PETA</h2>
+                        <h3>Pembela Tanah Air (Peninggalan Kolonial Belanda - Jepang)</h3>
+                        <div class="highlight-box">
+                            <p><b>📖 Penjelasan:</b></p>
+                            <p>Bangunan ini dulunya adalah markas tentara Belanda (KNIL) yang kemudian diambil alih
+                                Jepang pada tahun 1943 untuk dijadikan pusat pendidikan perwira PETA. PETA dilatih untuk
+                                mempertahankan tanah air dari Sekutu, namun justru menjadi kawah candradimuka bagi para
+                                perwira yang kemudian menjadi cikal bakal Tentara Nasional Indonesia (TNI).</p>
+                            <p><b>📍 Lokasi:</b> Jalan Jenderal Sudirman No. 35, Kota Bogor</p>
+                        </div>
                     </div>
                     <div class="img">
-                        <img src="img/batutulis.jpg">
+                        <img src="img/Museum Peta.jpg" alt="Museum PETA">
                     </div>
                 </div>
-                <div class="container middle-container">
+
+                <!-- Museum Perjuangan -->
+                <div class="container middle-container" data-year="1949">
+                    <div class="year-badge">1949</div>
                     <div class="text">
                         <h2>Museum Perjuangan Bogor</h2>
-                        <h3>( Peninggalan Kolonial Belanda )</h3>
-                        <p><b>📖 Penjelasan:</b></p> <br>
-                        <p>Museum ini didirikan untuk mengabadikan semangat juang rakyat Bogor, khususnya sekitar tahun 1945-1949 . Koleksi
-                        utamanya adalah berbagai macam senjata api rampasan dari tentara Jepang dan Inggris, seperti senapan Jukikanju, serta
-                        bambu runcing. Yang paling unik adalah koleksi pakaian pejuang yang masih berlumuran noda darah asli . Museum ini juga
-                        memiliki beberapa diorama yang menggambarkan pertempuran sengit di sekitar Bogor, seperti Pertempuran Bojong Kokosan dan
-                        Pertempuran Maseng.</p><br>
-                        <p><b>📍Lokasi:</b> Jalan Merdeka No. 56, Kelurahan Cibogor, Bogor Tengah</p>
+                        <h3>Peninggalan Kolonial Belanda</h3>
+                        <div class="highlight-box">
+                            <p><b>📖 Penjelasan:</b></p>
+                            <p>Museum ini didirikan untuk mengabadikan semangat juang rakyat Bogor, khususnya sekitar
+                                tahun 1945-1949. Koleksi utamanya adalah berbagai macam senjata api rampasan dari
+                                tentara Jepang dan Inggris, serta bambu runcing. Yang paling unik adalah koleksi pakaian
+                                pejuang yang masih berlumuran noda darah asli. Museum ini juga memiliki beberapa diorama
+                                pertempuran sengit.</p>
+                            <p><b>📍 Lokasi:</b> Jalan Merdeka No. 56, Kelurahan Cibogor, Bogor Tengah</p>
+                        </div>
                     </div>
                     <div class="img">
-                        <img src="img/batutulis.jpg">
+                        <img src="img/museum perjuangan.jpg" alt="Museum Perjuangan Bogor">
                     </div>
                 </div>
-                <div class="container end-container">
-                </div>
+
+                <div class="container end-container"></div>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Dengan mengunjungi situs-situs ini, kita tidak hanya belajar sejarah tetapi juga menghargai jasa para pahlawan dan
-        peradaban yang pernah berkembang di tanah Bogor.</p><br>
 
-        Historia Magister Vitae
+    <footer>
+        <div class="footer-content">
+            <div>
+
+                <p>"Dengan mengunjungi situs-situs ini, kita tidak hanya belajar sejarah tetapi juga menghargai jasa para
+                    pahlawan dan peradaban yang pernah berkembang di tanah Bogor."</p>
+                <div class="quote-author">— Historia Magister Vitae | Sejarah Adalah Guru Kehidupsn —</div>
+            </div>
+        </div>
         <div class="copyright">
-            <p>&copy 2026 by Ahmad Adjie Megananda, M. Fadlan, Vandjalu Gani Albar</p>
+            <p>&copy; 2026 by Ahmad Adjie Megananda, M. Fadlan, Vandjalu Gani Albar</p>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
